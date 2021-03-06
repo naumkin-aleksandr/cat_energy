@@ -96,3 +96,37 @@
         }
     }
 }
+
+@media (min-width: $width-desktop) {
+    .program {
+        padding: 80px 110px 55px;
+        display: flex;
+        justify-content: space-between;
+
+        &__box {
+            width: 570px;
+            padding: 77px 50px 50px;
+            margin-bottom: 0;
+
+            &-slim {
+                background-image: url(../img/cat-program-slim-desktop.png);
+                background-position: top 41px left 50px;
+            }
+
+            &-pro {
+                background-image: url(../img/cat-program-pro-desktop.png);
+                background-position: top 47px left 33px;
+            }
+        }
+
+        &__title {
+            padding-left: 215px;
+            margin-bottom: 73px;
+        }
+
+        &__text {
+            padding-right: 0;
+            margin-bottom: 23px;
+        }
+    }
+}

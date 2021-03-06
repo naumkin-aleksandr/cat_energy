@@ -45,3 +45,10 @@
         }
     }
 }
+
+@media (min-width: $width-desktop) {
+    .footer {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+}

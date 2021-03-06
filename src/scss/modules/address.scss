@@ -48,3 +48,24 @@
         }
     }
 }
+
+@media (min-width: $width-desktop) {
+    .address {
+        position: relative;
+
+        &__wrap-text {
+            padding: 60px 70px;
+            justify-content: center;
+            background: #fff;
+            position: absolute;
+            top: 95px;
+            left: 110px;
+            z-index: 2;
+        }
+
+        &__title {
+            margin-right: 40px;
+            line-height: 30px;
+        }
+    }
+}

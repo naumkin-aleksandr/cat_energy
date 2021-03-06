@@ -34,7 +34,7 @@
             text-transform: uppercase;
         }
 
-        &__text_small {
+        &__text_smal {
             width: 77px;
             font-size: 12px;
             line-height: 12px;
@@ -110,9 +110,7 @@
         text-transform: uppercase;
         background: none;
         cursor: pointer;
-
-        &:hover {
-        }
+        transition: 0.3s;
     }
 
     &__flag {
@@ -163,17 +161,12 @@
         }
 
         &__wrap-data {
-            // padding-bottom: px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         &-data {
-            // margin-bottom: 0;
-            // display: flex;
-            // justify-content: space-between;
-
             &__item {
                 width: 162px;
                 margin-right: 42px;
@@ -188,7 +181,7 @@
                 line-height: 77px;
             }
 
-            &__text_small {
+            &__text_smal {
                 width: auto;
                 padding: 0 7px;
                 font-size: 14px;
@@ -257,6 +250,59 @@
                 transform: translate(-50%, -50%);
                 cursor: pointer;
             }
+        }
+    }
+}
+
+@media (min-width: $width-desktop) {
+    .example {
+        padding: 0 110px 60px;
+        background: linear-gradient(
+            180deg,
+            #fff 0%,
+            #fff 30%,
+            $neutral-secondary 30%,
+            $neutral-secondary 100%
+        );
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        &__title {
+            margin-top: 70px;
+            margin-bottom: 140px;
+        }
+
+        &-data {
+            &__text_smal {
+                background: $neutral-secondary;
+            }
+        }
+
+        &__text {
+            width: 440px;
+            margin-bottom: 70px;
+            line-height: 24px;
+        }
+
+        &__wrap-data {
+            flex-flow: column;
+            align-items: flex-start;
+        }
+
+        &__price {
+            width: 100%;
+            margin-bottom: 10px;
+            text-align: left;
+            display: flex;
+
+            &_left-indent {
+                margin-left: 60px;
+            }
+        }
+
+        &__wrap-btn {
+            padding-bottom: 0;
         }
     }
 }

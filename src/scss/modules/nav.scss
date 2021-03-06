@@ -58,3 +58,28 @@
         }
     }
 }
+
+@media (min-width: $width-desktop) {
+    .nav {
+        &__link {
+            padding-bottom: 10px;
+            font-size: 20px;
+            line-height: 30px;
+            color: #fff;
+
+            &:hover {
+                opacity: 0.6;
+            }
+
+            &:active {
+                opacity: 0.3;
+            }
+
+            &_selected {
+                &::before {
+                    background: #fff;
+                }
+            }
+        }
+    }
+}

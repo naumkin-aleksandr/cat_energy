@@ -137,3 +137,10 @@
         }
     }
 }
+
+@media (min-width: $width-desktop) {
+    .benefit {
+        padding: 15px 110px 0;
+        border-bottom: none;
+    }
+}

@@ -6,9 +6,7 @@ body {
     line-height: 18px;
 }
 .page {
-    // min-width: 320px;
     width: 320px;
-    // max-width: 390px;
     margin: 0 auto;
     background: #fff;
 }
@@ -42,9 +40,15 @@ body {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $width-tablet) {
     .page {
-        width: 768px;
-        max-width: none;
+        width: $width-tablet;
+    }
+}
+
+@media (min-width: $width-desktop) {
+    .page {
+        width: $width-desktop;
+        background: #fff url(../img/index-bg-desktop.png) no-repeat top right;
     }
 }
