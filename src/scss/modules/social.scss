@@ -1,0 +1,36 @@
+.social {
+    display: flex;
+
+    &__link {
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__icon {
+        width: 35px;
+        height: 20px;
+        fill: #666;
+        transition: 0.3s;
+
+        &:hover {
+            fill: $success-color;
+        }
+
+        &:active {
+            fill: $success-color;
+            opacity: 0.3;
+        }
+    }
+}
+
+@media (min-width: $width-tablet) {
+    .social {
+        &__icon {
+            width: 45px;
+            height: 23px;
+        }
+    }
+}

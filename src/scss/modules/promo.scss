@@ -1,0 +1,64 @@
+.promo {
+    padding: 27px 20px 22px;
+    background: url(../img/promo-background-mobile.png) no-repeat;
+
+    &__title {
+        margin-bottom: 25px;
+        font-family: "Oswald";
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 36px;
+        color: #fff;
+        text-align: center;
+    }
+
+    &__subtitle {
+        margin-bottom: 30px;
+        font-family: "Oswald";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+    }
+
+    &__btn {
+        font-size: 14px;
+        line-height: 40px;
+    }
+}
+
+@media (min-width: $width-tablet) {
+    .promo {
+        padding: 30px 30px 0;
+        background: none;
+        position: relative;
+
+        &__title {
+            padding: 0 207px 0 87px;
+            margin-bottom: 40px;
+            font-size: 60px;
+            line-height: 60px;
+            color: #000;
+        }
+
+        &__subtitle {
+            padding-left: 87px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 20px;
+            color: #000;
+            text-align: left;
+        }
+
+        &__btn {
+            width: 244px;
+            font-size: 20px;
+            line-height: 54px;
+            position: absolute;
+            top: 256px;
+            left: 87px;
+        }
+    }
+}

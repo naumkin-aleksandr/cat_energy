@@ -1,0 +1,98 @@
+.program {
+    padding: 0 20px;
+
+    &__box {
+        padding: 30px 20px 20px;
+        margin-bottom: 20px;
+        background-color: $neutral-secondary;
+
+        &-slim {
+            background-image: url(../img/cat-program-slim-mobile.png);
+            background-repeat: no-repeat;
+            background-position: left 22px top 21px;
+        }
+
+        &-pro {
+            background-image: url(../img/cat-program-pro-mobile.png);
+            background-repeat: no-repeat;
+            background-position: left 13px top 24px;
+        }
+    }
+
+    &__title {
+        padding-left: 90px;
+        margin-bottom: 30px;
+        font-family: "Oswald";
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 37px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        padding-bottom: 23px;
+        margin-bottom: 15px;
+
+        border-bottom: 1px solid #d9d9d9;
+    }
+
+    &__link {
+        padding-right: 47px;
+        font-family: "Oswald";
+        font-weight: 400;
+        font-size: 16px;
+        text-transform: uppercase;
+        background: url(../img/icon_arrow.png) no-repeat right center;
+        transition: opacity 0.3s;
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+        &:active {
+            opacity: 0.3;
+        }
+    }
+}
+
+@media (min-width: $width-tablet) {
+    .program {
+        padding: 0 30px;
+
+        &__box {
+            padding: 77px 0 50px 50px;
+            margin-bottom: 30px;
+
+            &-slim {
+                background-image: url(../img/cat-program-slim-tablet.png);
+                background-position: top 81px left 446px;
+            }
+
+            &-pro {
+                background-image: url(../img/cat-program-pro-tablet.png);
+                background-position: top 91px left 412px;
+            }
+        }
+
+        &__title {
+            padding-left: 0;
+            margin-bottom: 24px;
+            font-size: 36px;
+        }
+
+        &__text {
+            padding-right: 315px;
+            padding-bottom: 0;
+            margin-bottom: 48px;
+            font-size: 16px;
+            line-height: 24px;
+            border-bottom: none;
+        }
+
+        &__link {
+            padding-right: 57px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}

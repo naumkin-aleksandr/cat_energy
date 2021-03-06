@@ -1,0 +1,47 @@
+.footer {
+    padding: 40px 20px 20px;
+    background: $neutral-secondary;
+
+    &__logo {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    &__social {
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid #d9d9d9;
+        border-bottom: 1px solid #d9d9d9;
+    }
+
+    &__copy {
+        padding-top: 30px;
+        align-items: start;
+    }
+}
+
+@media (min-width: $width-tablet) {
+    .footer {
+        padding: 55px 30px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__logo {
+            margin-bottom: 0;
+        }
+
+        &__social {
+            padding: 0;
+            border-top: none;
+            border-bottom: none;
+        }
+
+        &__copy {
+            padding-top: 0;
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+}

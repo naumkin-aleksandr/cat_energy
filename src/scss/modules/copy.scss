@@ -1,0 +1,18 @@
+.copy {
+    &__link {
+        font-family: "Arial";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        transition: 0.3s;
+
+        &:hover {
+            color: $success-color;
+        }
+
+        &:active {
+            color: $success-color;
+            opacity: 0.3;
+        }
+    }
+}

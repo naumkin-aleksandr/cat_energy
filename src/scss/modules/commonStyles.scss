@@ -1,0 +1,50 @@
+body {
+    background: gray;
+    font-family: "Arial";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+.page {
+    // min-width: 320px;
+    width: 320px;
+    // max-width: 390px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.logo {
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        opacity: 0.6;
+    }
+}
+
+.btn {
+    display: block;
+    font-family: "Oswald";
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    background: $success-color;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        background: $btn-bg-hover;
+    }
+    &:active {
+        color: rgba(255, 255, 255, 0.3);
+    }
+}
+
+@media (min-width: 768px) {
+    .page {
+        width: 768px;
+        max-width: none;
+    }
+}
