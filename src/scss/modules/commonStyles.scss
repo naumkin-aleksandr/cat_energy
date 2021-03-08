@@ -5,6 +5,7 @@ body {
     font-size: 14px;
     line-height: 18px;
 }
+
 .page {
     width: 320px;
     margin: 0 auto;
@@ -49,6 +50,10 @@ body {
 @media (min-width: $width-desktop) {
     .page {
         width: $width-desktop;
-        background: #fff url(../img/index-bg-desktop.png) no-repeat top right;
+
+        &-index {
+            background: #fff url(../img/index-bg-desktop.png) no-repeat top
+                right;
+        }
     }
 }

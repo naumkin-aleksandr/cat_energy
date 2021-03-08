@@ -1,0 +1,126 @@
+.product-catalog {
+    &__title {
+        padding: 27px 20px 40px;
+        font-family: "Oswald";
+        font-size: 36px;
+        line-height: 36px;
+        border-top: 1px solid #ebebeb;
+        border-bottom: 1px solid #ebebeb;
+    }
+
+    &__box {
+    }
+
+    &__item {
+        padding: 20px 20px 25px;
+        border-bottom: 1px solid #ebebeb;
+    }
+
+    &__bl {
+        margin-bottom: 13px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img {
+        max-width: none;
+    }
+
+    &__title-product {
+        margin-bottom: 18px;
+        padding-right: 65px;
+        font-family: "Oswald";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+
+    &__table {
+        width: 100%;
+    }
+
+    &__table-row {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+
+    &__btn {
+        width: 100%;
+        font-size: 16px;
+        line-height: 40px;
+    }
+
+    &__item-else {
+        text-align: center;
+    }
+
+    &__icon-else {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin-bottom: 20px;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background: #d3d3d3;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+
+        &::after {
+            content: "";
+            width: 2px;
+            height: 100%;
+            background: #d3d3d3;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__title-else {
+        margin-bottom: 10px;
+        font-family: "Oswald";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+
+    &__text-else {
+        margin-bottom: 20px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    &__btn-else {
+        width: 100%;
+        font-size: 16px;
+        display: block;
+        font-family: "Oswald";
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 40px;
+        color: #000;
+        background: $neutral-secondary;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            background: #ebebeb;
+        }
+
+        &:active {
+            color: rgba(0, 0, 0, 0.3);
+        }
+    }
+}

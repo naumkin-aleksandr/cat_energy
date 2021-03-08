@@ -34,7 +34,9 @@ const btnWas = document.querySelector("#btn-was"),
     range = document.querySelector("#range"),
     rangeIndicador = document.querySelector("#range-indicador");
 
-const rightEdge = range.offsetWidth;
+if (range) {
+    const rightEdge = range.offsetWidth;
+}
 
 if (btnWas) {
     btnWas.addEventListener("click", () => {
@@ -56,7 +58,9 @@ if (btnBecame) {
     });
 }
 
-rangeBtn.addEventListener("pointerdown", shiftRange);
+if (rangeBtn) {
+    rangeBtn.addEventListener("pointerdown", shiftRange);
+}
 
 function shiftRange(even) {
     even.preventDefault();

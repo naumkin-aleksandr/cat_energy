@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="/assets/favicon.ico"
+            type="image/x-icon"
+        />
+        <script
+            src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
+            type="text/javascript"
+        ></script>
+        <title>cat energy catalog</title>
+    </head>
+    <body>
+        <div class="page">
+            <header class="header">
+                <div class="header__wrap">
+                    <img
+                        class="header__logo"
+                        src="../img/logo-mobile-cat.png"
+                        alt="logo-mobile"
+                    />
+                    <div class="logo">
+                        <a href="index.html">
+                            <picture>
+                                <source
+                                    media="(min-width: 1440px)"
+                                    srcset="../img/logo-desktop.png"
+                                />
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="../img/logo-tablet.png"
+                                />
+                                <img
+                                    srcset="../img/logo-mobile.png"
+                                    alt="logo"
+                                />
+                            </picture>
+                        </a>
+                    </div>
+                    <button class="header__btn-menu" id="header-btn"></button>
+                </div>
+                <!-- /.header__wrap -->
+                <nav class="header__nav nav" id="header-nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a
+                                class="nav__link nav__link_selected"
+                                href="catalog.html"
+                                >Каталог продукции</a
+                            >
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Подбор программы</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <!--/.header-->
+
+            <section class="product-catalog">
+                <h1 class="product-catalog__title">Каталог продукции</h1>
+                <div class="product-catalog__box">
+                    <div class="product-catalog__item">
+                        <div class="product-catalog__bl">
+                            <picture>
+                                <!-- <source media="(min-width: 1440px)" srcset="" /> -->
+                                <!-- <source media="(min-width: 768px)" srcset="" /> -->
+                                <img
+                                    class="product-catalog__img"
+                                    srcset="../img/chicken-500-mob.png"
+                                    alt="кошачий корм"
+                                />
+                            </picture>
+
+                            <div class="product-catalog__bl-text">
+                                <h3 class="product-catalog__title-product">
+                                    Cat energy pro 500 г
+                                </h3>
+                                <table class="product-catalog__table">
+                                    <tr class="product-catalog__table-row">
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Масса
+                                        </td>
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            500 г
+                                        </td>
+                                    </tr>
+                                    <tr class="product-catalog__table-row">
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Вкус
+                                        </td>
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Курица
+                                        </td>
+                                    </tr>
+                                    <tr class="product-catalog__table-row">
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Цена
+                                        </td>
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            700 Р.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--/.product-catalog__bl-text-->
+                        </div>
+                        <!--/.product-catalog__bl-->
+                        <button class="btn product-catalog__btn">
+                            Заказать
+                        </button>
+                    </div>
+                    <!--/.product-catalog__item-->
+
+                    <div class="product-catalog__item">
+                        <div class="product-catalog__bl">
+                            <picture>
+                                <!-- <source media="(min-width: 1440px)" srcset="" /> -->
+                                <!-- <source media="(min-width: 768px)" srcset="" /> -->
+                                <img
+                                    class="product-catalog__img"
+                                    srcset="../img/chicken-1000-mob.png"
+                                    alt="кошачий корм"
+                                />
+                            </picture>
+
+                            <div class="product-catalog__bl-text">
+                                <h3 class="product-catalog__title-product">
+                                    Cat energy pro 1000 г
+                                </h3>
+                                <table class="product-catalog__table">
+                                    <tr class="product-catalog__table-row">
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Масса
+                                        </td>
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            1000 г
+                                        </td>
+                                    </tr>
+                                    <tr class="product-catalog__table-row">
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Вкус
+                                        </td>
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Курица
+                                        </td>
+                                    </tr>
+                                    <tr class="product-catalog__table-row">
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Цена
+                                        </td>
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            1000 Р.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--/.product-catalog__bl-text-->
+                        </div>
+                        <!--/.product-catalog__bl-->
+                        <button class="btn product-catalog__btn">
+                            Заказать
+                        </button>
+                    </div>
+                    <!--/.product-catalog__item-->
+
+                    <div class="product-catalog__item">
+                        <div class="product-catalog__bl">
+                            <picture>
+                                <!-- <source media="(min-width: 1440px)" srcset="" /> -->
+                                <!-- <source media="(min-width: 768px)" srcset="" /> -->
+                                <img
+                                    class="product-catalog__img"
+                                    srcset="../img/fish-500-mob.png"
+                                    alt="кошачий корм"
+                                />
+                            </picture>
+
+                            <div class="product-catalog__bl-text">
+                                <h3 class="product-catalog__title-product">
+                                    Cat energy pro 500 г
+                                </h3>
+                                <table class="product-catalog__table">
+                                    <tr class="product-catalog__table-row">
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Масса
+                                        </td>
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            500 г
+                                        </td>
+                                    </tr>
+                                    <tr class="product-catalog__table-row">
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Вкус
+                                        </td>
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Рыба
+                                        </td>
+                                    </tr>
+                                    <tr class="product-catalog__table-row">
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Цена
+                                        </td>
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            700 Р.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--/.product-catalog__bl-text-->
+                        </div>
+                        <!--/.product-catalog__bl-->
+                        <button class="btn product-catalog__btn">
+                            Заказать
+                        </button>
+                    </div>
+                    <!--/.product-catalog__item-->
+
+                    <div class="product-catalog__item">
+                        <div class="product-catalog__bl">
+                            <picture>
+                                <!-- <source media="(min-width: 1440px)" srcset="" /> -->
+                                <!-- <source media="(min-width: 768px)" srcset="" /> -->
+                                <img
+                                    class="product-catalog__img"
+                                    srcset="../img/fish-1000-mob.png"
+                                    alt="кошачий корм"
+                                />
+                            </picture>
+
+                            <div class="product-catalog__bl-text">
+                                <h3 class="product-catalog__title-product">
+                                    Cat energy pro 1000 г
+                                </h3>
+                                <table class="product-catalog__table">
+                                    <tr class="product-catalog__table-row">
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Масса
+                                        </td>
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            1000 г
+                                        </td>
+                                    </tr>
+                                    <tr class="product-catalog__table-row">
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Вкус
+                                        </td>
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Рыба
+                                        </td>
+                                    </tr>
+                                    <tr class="product-catalog__table-row">
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Цена
+                                        </td>
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            1000 Р.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--/.product-catalog__bl-text-->
+                        </div>
+                        <!--/.product-catalog__bl-->
+                        <button class="btn product-catalog__btn">
+                            Заказать
+                        </button>
+                    </div>
+                    <!--/.product-catalog__item-->
+
+                    <div class="product-catalog__item">
+                        <div class="product-catalog__bl">
+                            <picture>
+                                <!-- <source media="(min-width: 1440px)" srcset="" /> -->
+                                <!-- <source media="(min-width: 768px)" srcset="" /> -->
+                                <img
+                                    class="product-catalog__img"
+                                    srcset="../img/buckwheat-500-mob.png"
+                                    alt="кошачий корм"
+                                />
+                            </picture>
+
+                            <div class="product-catalog__bl-text">
+                                <h3 class="product-catalog__title-product">
+                                    Cat energy slim 500 г
+                                </h3>
+                                <table class="product-catalog__table">
+                                    <tr class="product-catalog__table-row">
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Масса
+                                        </td>
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            500 г
+                                        </td>
+                                    </tr>
+                                    <tr class="product-catalog__table-row">
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Вкус
+                                        </td>
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Гречка
+                                        </td>
+                                    </tr>
+                                    <tr class="product-catalog__table-row">
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Цена
+                                        </td>
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            400 Р.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--/.product-catalog__bl-text-->
+                        </div>
+                        <!--/.product-catalog__bl-->
+                        <button class="btn product-catalog__btn">
+                            Заказать
+                        </button>
+                    </div>
+                    <!--/.product-catalog__item-->
+
+                    <div class="product-catalog__item">
+                        <div class="product-catalog__bl">
+                            <picture>
+                                <!-- <source media="(min-width: 1440px)" srcset="" /> -->
+                                <!-- <source media="(min-width: 768px)" srcset="" /> -->
+                                <img
+                                    class="product-catalog__img"
+                                    srcset="../img/buckwheat-1000-mob.png"
+                                    alt="кошачий корм"
+                                />
+                            </picture>
+
+                            <div class="product-catalog__bl-text">
+                                <h3 class="product-catalog__title-product">
+                                    Cat energy slim 1000 г
+                                </h3>
+                                <table class="product-catalog__table">
+                                    <tr class="product-catalog__table-row">
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Масса
+                                        </td>
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            1000 г
+                                        </td>
+                                    </tr>
+                                    <tr class="product-catalog__table-row">
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Вкус
+                                        </td>
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Гречка
+                                        </td>
+                                    </tr>
+                                    <tr class="product-catalog__table-row">
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Цена
+                                        </td>
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            700 Р.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--/.product-catalog__bl-text-->
+                        </div>
+                        <!--/.product-catalog__bl-->
+                        <button class="btn product-catalog__btn">
+                            Заказать
+                        </button>
+                    </div>
+                    <!--/.product-catalog__item-->
+
+                    <div class="product-catalog__item">
+                        <div class="product-catalog__bl">
+                            <picture>
+                                <!-- <source media="(min-width: 1440px)" srcset="" /> -->
+                                <!-- <source media="(min-width: 768px)" srcset="" /> -->
+                                <img
+                                    class="product-catalog__img"
+                                    srcset="../img/rice-500-mob.png"
+                                    alt="кошачий корм"
+                                />
+                            </picture>
+
+                            <div class="product-catalog__bl-text">
+                                <h3 class="product-catalog__title-product">
+                                    Cat energy slim 500 г
+                                </h3>
+                                <table class="product-catalog__table">
+                                    <tr class="product-catalog__table-row">
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Масса
+                                        </td>
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            500 г
+                                        </td>
+                                    </tr>
+                                    <tr class="product-catalog__table-row">
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Вкус
+                                        </td>
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Рис
+                                        </td>
+                                    </tr>
+                                    <tr class="product-catalog__table-row">
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            Цена
+                                        </td>
+                                        <td
+                                            class="product-catalog__table-column"
+                                        >
+                                            500 Р.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--/.product-catalog__bl-text-->
+                        </div>
+                        <!--/.product-catalog__bl-->
+                        <button class="btn product-catalog__btn">
+                            Заказать
+                        </button>
+                    </div>
+                    <!--/.product-catalog__item-->
+
+                    <div
+                        class="product-catalog__item product-catalog__item-else"
+                    >
+                        <i class="product-catalog__icon-else"></i>
+                        <h3 class="product-catalog__title-else">
+                            Показать еще 100500 таваров
+                        </h3>
+                        <p class="product-catalog__text-else">
+                            На самом деле вкусов гораздо больше!
+                        </p>
+                        <button class="product-catalog__btn-else">
+                            Показать все
+                        </button>
+                    </div>
+                </div>
+                <!-- /.product-catalog__box -->
+            </section>
+            <!-- /.product-catalog -->
+
+            <section class="additional-goods">
+                <h2 class="additional-goods__title">Дополнительные товары</h2>
+                <div class="additional-goods__box">
+                    <div class="additional-goods__item">
+                        <h4 class="additional-goods__title-product">
+                            Сахарозаменитель
+                        </h4>
+                        <p class="additional-goods__text-product">
+                            1 упаковка (100 г)
+                            <span class="additional-goods__price">200 Р.</span>
+                        </p>
+                        <button class="btn additional-goods__btn">
+                            Заказать
+                        </button>
+                    </div>
+                    <!--/.additional-goods__item-->
+
+                    <div class="additional-goods__item">
+                        <h4 class="additional-goods__title-product">
+                            Питьевая вода
+                        </h4>
+                        <p class="additional-goods__text-product">
+                            5 литров
+                            <span class="additional-goods__price">50 Р.</span>
+                        </p>
+                        <button class="btn additional-goods__btn">
+                            Заказать
+                        </button>
+                    </div>
+                    <!--/.additional-goods__item-->
+
+                    <div class="additional-goods__item">
+                        <h4 class="additional-goods__title-product">Молоко</h4>
+                        <p class="additional-goods__text-product">
+                            1 литр
+                            <span class="additional-goods__price">100 Р.</span>
+                        </p>
+                        <button class="btn additional-goods__btn">
+                            Заказать
+                        </button>
+                    </div>
+                    <!--/.additional-goods__item-->
+
+                    <div class="additional-goods__item">
+                        <h4 class="additional-goods__title-product">
+                            Витамины
+                        </h4>
+                        <p class="additional-goods__text-product">
+                            1 упаковка (30 г)
+                            <span class="additional-goods__price">300 Р.</span>
+                        </p>
+                        <button class="btn additional-goods__btn">
+                            Заказать
+                        </button>
+                    </div>
+                    <!--/.additional-goods__item-->
+                </div>
+                <!--/.additional-goods__box-->
+
+                <div class="additional-goods__gift">
+                    <p class="additional-goods__text-gift">
+                        Закажите все и получите чехол для кота в подарок!
+                    </p>
+                </div>
+            </section>
+            <!-- /.additional-goods -->
+
+            <section class="address">
+                <div class="address__wrap-text">
+                    <h2 class="address__title">
+                        Приглашаем к сотрудничеству дилеров!
+                    </h2>
+                    <p class="address__text">
+                        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+                    </p>
+                </div>
+                <div class="address__map" id="map"></div>
+            </section>
+            <!-- /.address -->
+
+            <footer class="footer">
+                <div class="footer__logo">
+                    <a href="index.html">
+                        <picture>
+                            <source
+                                media="(min-width: 768px)"
+                                srcset="../img/logo-footer-tablet.png"
+                            />
+                            <img
+                                class="logo"
+                                src="../img/logo-mobile.png"
+                                alt="logo"
+                            />
+                        </picture>
+                    </a>
+                </div>
+
+                <div class="footer__social social">
+                    <a href="#" class="social__link">
+                        <svg class="social__icon">
+                            <use href="../img/svg-sprite.svg#vk"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social__link">
+                        <svg class="social__icon">
+                            <use href="../img/svg-sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social__link">
+                        <svg class="social__icon">
+                            <use href="../img/svg-sprite.svg#facebook"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="footer__copy copy">
+                    <a
+                        class="copy__link"
+                        href="https://htmlacademy.ru/study"
+                        target="_blank"
+                        >HTML Academy</a
+                    >
+                </div>
+            </footer>
+            <!-- /.footer -->
+        </div>
+        <!-- /.page -->
+    </body>
+</html>
