@@ -34,8 +34,10 @@ const btnWas = document.querySelector("#btn-was"),
     range = document.querySelector("#range"),
     rangeIndicador = document.querySelector("#range-indicador");
 
+let rightEdge = null;
+
 if (range) {
-    const rightEdge = range.offsetWidth;
+    rightEdge = range.offsetWidth;
 }
 
 if (btnWas) {

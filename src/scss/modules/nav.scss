@@ -65,7 +65,10 @@
             padding-bottom: 10px;
             font-size: 20px;
             line-height: 30px;
-            color: #fff;
+
+            &_white {
+                color: #fff;
+            }
 
             &:hover {
                 opacity: 0.6;
@@ -76,8 +79,10 @@
             }
 
             &_selected {
-                &::before {
-                    background: #fff;
+                &_white {
+                    &::before {
+                        background: #fff;
+                    }
                 }
             }
         }

@@ -2,6 +2,10 @@
     &__wrap-text {
         padding: 25px 20px;
         display: flex;
+
+        &_gray {
+            background: $neutral-secondary;
+        }
     }
 
     &__title {
@@ -61,6 +65,10 @@
             top: 95px;
             left: 110px;
             z-index: 2;
+
+            &_gray {
+                background: #fff;
+            }
         }
 
         &__title {

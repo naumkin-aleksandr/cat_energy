@@ -53,6 +53,9 @@
     }
 
     &__item-else {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
         text-align: center;
     }
 
@@ -121,6 +124,88 @@
 
         &:active {
             color: rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+
+@media (min-width: $width-tablet) {
+    .product-catalog {
+        &__title {
+            padding: 35px 30px 80px;
+            font-size: 60px;
+            line-height: 60px;
+            border-top: none;
+            border-bottom: none;
+        }
+
+        &__box {
+            display: flex;
+            flex-flow: wrap;
+        }
+
+        &__item {
+            width: 324px;
+            margin: 70px 30px;
+            padding: 161px 40px 40px;
+            border-bottom: none;
+            background: $neutral-secondary;
+            display: flex;
+            flex-flow: column;
+        }
+
+        &__bl {
+            margin-bottom: 33px;
+            position: relative;
+        }
+
+        &__img {
+            position: absolute;
+            top: -234px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &__title-product {
+            margin-bottom: 21px;
+            padding: 0 45px;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+        }
+
+        &__table-row {
+            font-size: 16px;
+            line-height: 32px;
+            border-bottom: 1px solid #cdcdcd;
+        }
+
+        &__item-else {
+            padding: 52px 40px 40px;
+            background: #fff;
+            border: 2px solid $neutral-secondary;
+        }
+
+        &__icon-else {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 50px;
+        }
+
+        &__title-else {
+            margin-bottom: 23px;
+            padding: 0 40px;
+            font-size: 20px;
+            line-height: 22px;
+        }
+
+        &__text-else {
+            padding: 0 15px;
+            font-size: 16px;
+            line-height: 18px;
+        }
+
+        &__btn-else {
+            margin-top: auto;
         }
     }
 }
