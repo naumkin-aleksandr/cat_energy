@@ -209,3 +209,24 @@
         }
     }
 }
+
+@media (min-width: $width-desktop) {
+    .product-catalog {
+        &__title {
+            padding: 45px 110px 80px;
+        }
+
+        &__box {
+            padding: 0 70px;
+        }
+
+        &__item {
+            width: 245px;
+            margin: 70px 40px;
+        }
+
+        &__title-product {
+            padding: 0;
+        }
+    }
+}

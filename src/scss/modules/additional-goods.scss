@@ -92,7 +92,7 @@
                 background: $success-color;
                 position: absolute;
                 top: 50%;
-                right: 708px;
+                right: 100%;
                 transform: translateY(-50%);
             }
         }
@@ -138,6 +138,67 @@
             background: url(../img/icon_gift.png) no-repeat top 57px left 78px,
                 url(../img/gift-photo-tablet.png) no-repeat center;
             text-align: left;
+        }
+    }
+}
+
+@media (min-width: $width-desktop) {
+    .additional-goods {
+        padding: 0 110px 80px;
+
+        &__title {
+            padding: 0;
+
+            &::before {
+                left: 380px;
+            }
+
+            &::after {
+                right: 103%;
+            }
+        }
+
+        &__wrap_flex {
+            display: flex;
+        }
+
+        &__box {
+            width: 896px;
+            margin-bottom: 0;
+        }
+
+        &__item {
+            padding: 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-left: none;
+            border-right: none;
+        }
+
+        &__box-text {
+            width: 612px;
+            margin-bottom: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__text-product {
+            width: 286px;
+        }
+
+        &__btn {
+            width: 244px;
+        }
+
+        &__gift {
+            width: 245px;
+            height: 289px;
+            margin-left: auto;
+            padding: 185px 40px 0;
+            background: url(../img/icon_gift.png) no-repeat top 56px left 84px,
+                url(../img/gift-photo-desktop.png) no-repeat center;
+            text-align: center;
         }
     }
 }
