@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="/assets/favicon.ico"
+            type="image/x-icon"
+        />
+        <script
+            src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
+            type="text/javascript"
+        ></script>
+        <title>cat energy form</title>
+    </head>
+    <body>
+        <div class="page">
+            <header class="header">
+                <div class="header__wrap">
+                    <img
+                        class="header__logo"
+                        src="../img/logo-mobile-cat.png"
+                        alt="logo-mobile"
+                    />
+                    <div class="logo">
+                        <a href="index.html">
+                            <picture>
+                                <source
+                                    media="(min-width: 1440px)"
+                                    srcset="../img/logo-desktop.png"
+                                />
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="../img/logo-tablet.png"
+                                />
+                                <img
+                                    srcset="../img/logo-mobile.png"
+                                    alt="logo"
+                                />
+                            </picture>
+                        </a>
+                    </div>
+                    <button class="header__btn-menu" id="header-btn"></button>
+                </div>
+                <!-- /.header__wrap -->
+                <nav class="header__nav nav" id="header-nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="catalog.html"
+                                >Каталог продукции</a
+                            >
+                        </li>
+                        <li class="nav__item">
+                            <a
+                                class="nav__link nav__link_selected"
+                                href="form.html"
+                                >Подбор программы</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <!--/.header-->
+
+            <section class="program-selection">
+                <h1 class="program-selection__title">Подбор программы</h1>
+                <p class="program-selection__subtitle">
+                    Заполните анкету, и мы подберем программу питания для вашего
+                    кота
+                </p>
+
+                <form action="#" class="program-selection__form form-program">
+                    <fieldset
+                        class="form-program__box form-program__box_bottom-line"
+                    >
+                        <div class="form-program__bl">
+                            <label
+                                class="form-program__label form-program__label-text"
+                                for=""
+                                >Имя:*</label
+                            >
+                            <input
+                                class="form-program__input-text"
+                                type="text"
+                                required
+                            />
+                        </div>
+                        <div class="form-program__bl">
+                            <label
+                                class="form-program__label form-program__label-text"
+                                for=""
+                                >Вес(кг):*</label
+                            >
+                            <input
+                                class="form-program__input-text"
+                                type="number"
+                                required
+                                min="1"
+                                max="100"
+                            />
+                        </div>
+                        <div class="form-program__bl">
+                            <label
+                                class="form-program__label form-program__label-text"
+                                for=""
+                                >Возраст(лет):</label
+                            >
+                            <input
+                                class="form-program__input-text"
+                                type="number"
+                                min="1"
+                                max="15"
+                            />
+                        </div>
+                    </fieldset>
+                    <!--/.form-program__box-->
+
+                    <fieldset
+                        class="form-program__box form-program__box_bottom-line"
+                    >
+                        <input
+                            class="form-program__input-radio visuallyhidden"
+                            id="radio-program-slimming"
+                            type="radio"
+                            name="radio-program"
+                            checked
+                        />
+                        <label
+                            class="form-program__label form-program__label-radio"
+                            for="radio-program-slimming"
+                        >
+                            Похудение
+                        </label>
+
+                        <input
+                            class="form-program__input-radio visuallyhidden"
+                            id="radio-program-weight"
+                            type="radio"
+                            name="radio-program"
+                        />
+                        <label
+                            class="form-program__label form-program__label-radio"
+                            for="radio-program-weight"
+                        >
+                            Набор массы
+                        </label>
+
+                        <input
+                            class="form-program__input-radio visuallyhidden"
+                            id="radio-program-prompt"
+                            type="radio"
+                            name="radio-program"
+                        />
+                        <label
+                            class="form-program__label form-program__label-radio"
+                            for="radio-program-prompt"
+                        >
+                            Не знаю (нужен ваш совет)
+                        </label>
+                    </fieldset>
+                    <!-- /.form-program__box -->
+
+                    <fieldset
+                        class="form-program__box form-program__box_top-line"
+                    >
+                        <legend
+                            class="form-program__title form-program__title_top-indent"
+                        >
+                            Контактные данные (владельца кота)
+                        </legend>
+                        <div class="form-program__bl">
+                            <label
+                                class="form-program__label form-program__label-text"
+                                for=""
+                            >
+                                e-mail:*
+                            </label>
+                            <input
+                                class="form-program__input-text"
+                                type="email"
+                                required
+                            />
+                        </div>
+
+                        <div class="form-program__bl">
+                            <label
+                                class="form-program__label form-program__label-text"
+                                for=""
+                            >
+                                телефон:*
+                            </label>
+                            <input
+                                class="form-program__input-text"
+                                type="tel"
+                                required
+                            />
+                        </div>
+                    </fieldset>
+                    <!-- /.form-program__box -->
+
+                    <fieldset
+                        class="form-program__box form-program__box_top-line"
+                    >
+                        <legend class="form-program__title">Комментарий</legend>
+                        <textarea
+                            class="form-program__textarea"
+                            name=""
+                            id=""
+                        ></textarea>
+                    </fieldset>
+                    <!-- /.form-program__box -->
+
+                    <fieldset
+                        class="form-program__box form-program__box_top-line"
+                    >
+                        <legend class="form-program__title">
+                            Дополнительно
+                        </legend>
+                        <input
+                            class="form-program__input-checbox visuallyhidden"
+                            id="program-checbox-sugar-substitute"
+                            type="checkbox"
+                            checked
+                        />
+                        <label
+                            class="form-program__label form-program__label-checbox"
+                            for="program-checbox-sugar-substitute"
+                            >сахарозаменитель</label
+                        >
+                        <input
+                            class="form-program__input-checbox visuallyhidden"
+                            id="program-checbox-water"
+                            type="checkbox"
+                        />
+                        <label
+                            class="form-program__label form-program__label-checbox"
+                            for="program-checbox-water"
+                            >питьевая вода</label
+                        >
+                        <input
+                            class="form-program__input-checbox visuallyhidden"
+                            id="program-checbox-milk"
+                            type="checkbox"
+                        />
+                        <label
+                            class="form-program__label form-program__label-checbox"
+                            for="program-checbox-milk"
+                            >молоко</label
+                        >
+                        <input
+                            class="form-program__input-checbox visuallyhidden"
+                            id="program-checbox-vitamins"
+                            type="checkbox"
+                        />
+                        <label
+                            class="form-program__label form-program__label-checbox"
+                            for="program-checbox-vitamins"
+                            >витамины</label
+                        >
+                    </fieldset>
+                    <!-- /.form-program__box -->
+                    <button class="btn form-program__btn">
+                        Отправить заявку
+                    </button>
+                    <p class="form-program__note">*&#8212;Обязательные поля</p>
+                </form>
+                <!-- /.program-selection__form -->
+            </section>
+            <!-- /.program-selection -->
+
+            <section class="address">
+                <div class="address__wrap-text address__wrap-text_gray">
+                    <h2 class="address__title">
+                        Приглашаем к сотрудничеству дилеров!
+                    </h2>
+                    <p class="address__text">
+                        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+                    </p>
+                </div>
+                <div class="address__map" id="map"></div>
+            </section>
+            <!-- /.address -->
+
+            <footer class="footer">
+                <div class="footer__logo">
+                    <a href="index.html">
+                        <picture>
+                            <source
+                                media="(min-width: 768px)"
+                                srcset="../img/logo-footer-tablet.png"
+                            />
+                            <img
+                                class="logo"
+                                src="../img/logo-mobile.png"
+                                alt="logo"
+                            />
+                        </picture>
+                    </a>
+                </div>
+
+                <div class="footer__social social">
+                    <a href="#" class="social__link">
+                        <svg class="social__icon">
+                            <use href="../img/svg-sprite.svg#vk"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social__link">
+                        <svg class="social__icon">
+                            <use href="../img/svg-sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social__link">
+                        <svg class="social__icon">
+                            <use href="../img/svg-sprite.svg#facebook"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="footer__copy copy">
+                    <a
+                        class="copy__link"
+                        href="https://htmlacademy.ru/study"
+                        target="_blank"
+                        >HTML Academy</a
+                    >
+                </div>
+            </footer>
+            <!-- /.footer -->
+        </div>
+        <!-- /.page -->
+    </body>
+</html>
