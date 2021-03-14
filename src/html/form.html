@@ -75,138 +75,150 @@
                 </p>
 
                 <form action="#" class="program-selection__form form-program">
-                    <fieldset
-                        class="form-program__box form-program__box_bottom-line"
-                    >
-                        <div class="form-program__bl">
-                            <label
-                                class="form-program__label form-program__label-text"
-                                for=""
-                                >Имя:*</label
-                            >
-                            <input
-                                class="form-program__input-text"
-                                type="text"
-                                required
-                            />
-                        </div>
-                        <div class="form-program__bl">
-                            <label
-                                class="form-program__label form-program__label-text"
-                                for=""
-                                >Вес(кг):*</label
-                            >
-                            <input
-                                class="form-program__input-text"
-                                type="number"
-                                required
-                                min="1"
-                                max="100"
-                            />
-                        </div>
-                        <div class="form-program__bl">
-                            <label
-                                class="form-program__label form-program__label-text"
-                                for=""
-                                >Возраст(лет):</label
-                            >
-                            <input
-                                class="form-program__input-text"
-                                type="number"
-                                min="1"
-                                max="15"
-                            />
-                        </div>
-                    </fieldset>
-                    <!--/.form-program__box-->
-
-                    <fieldset
-                        class="form-program__box form-program__box_bottom-line"
-                    >
-                        <input
-                            class="form-program__input-radio visuallyhidden"
-                            id="radio-program-slimming"
-                            type="radio"
-                            name="radio-program"
-                            checked
-                        />
-                        <label
-                            class="form-program__label form-program__label-radio"
-                            for="radio-program-slimming"
+                    <div class="form-program__wrap-box-flex">
+                        <fieldset
+                            class="form-program__box form-program__box_bottom-line form-program__box_width-desktop"
                         >
-                            Похудение
-                        </label>
+                            <div class="form-program__bl">
+                                <label
+                                    class="form-program__label form-program__label-text"
+                                    for=""
+                                    >Имя:*</label
+                                >
+                                <input
+                                    class="form-program__input-text"
+                                    type="text"
+                                    required
+                                />
+                            </div>
+                            <div class="form-program__bl">
+                                <label
+                                    class="form-program__label form-program__label-text"
+                                    for=""
+                                    >Вес(кг):*</label
+                                >
+                                <input
+                                    class="form-program__input-text"
+                                    type="number"
+                                    required
+                                    min="1"
+                                    max="100"
+                                />
+                            </div>
+                            <div class="form-program__bl">
+                                <label
+                                    class="form-program__label form-program__label-text"
+                                    for=""
+                                    >Возраст(лет):</label
+                                >
+                                <input
+                                    class="form-program__input-text"
+                                    type="number"
+                                    min="1"
+                                    max="15"
+                                />
+                            </div>
+                        </fieldset>
+                        <!--/.form-program__box-->
 
-                        <input
-                            class="form-program__input-radio visuallyhidden"
-                            id="radio-program-weight"
-                            type="radio"
-                            name="radio-program"
-                        />
-                        <label
-                            class="form-program__label form-program__label-radio"
-                            for="radio-program-weight"
+                        <fieldset
+                            class="form-program__box form-program__box_bottom-line form-program__box_bottom-indent form-program__box_width-desktop"
                         >
-                            Набор массы
-                        </label>
+                            <div class="form-program__block-border">
+                                <input
+                                    class="form-program__input-radio visuallyhidden"
+                                    id="radio-program-slimming"
+                                    type="radio"
+                                    name="radio-program"
+                                    checked
+                                />
+                                <label
+                                    class="form-program__label form-program__label-radio"
+                                    for="radio-program-slimming"
+                                >
+                                    Похудение
+                                </label>
 
-                        <input
-                            class="form-program__input-radio visuallyhidden"
-                            id="radio-program-prompt"
-                            type="radio"
-                            name="radio-program"
-                        />
-                        <label
-                            class="form-program__label form-program__label-radio"
-                            for="radio-program-prompt"
-                        >
-                            Не знаю (нужен ваш совет)
-                        </label>
-                    </fieldset>
-                    <!-- /.form-program__box -->
+                                <input
+                                    class="form-program__input-radio visuallyhidden"
+                                    id="radio-program-weight"
+                                    type="radio"
+                                    name="radio-program"
+                                />
+                                <label
+                                    class="form-program__label form-program__label-radio"
+                                    for="radio-program-weight"
+                                >
+                                    Набор массы
+                                </label>
 
-                    <fieldset
-                        class="form-program__box form-program__box_top-line"
-                    >
+                                <input
+                                    class="form-program__input-radio visuallyhidden"
+                                    id="radio-program-prompt"
+                                    type="radio"
+                                    name="radio-program"
+                                />
+                                <label
+                                    class="form-program__label form-program__label-radio"
+                                    for="radio-program-prompt"
+                                >
+                                    Не знаю (нужен ваш совет)
+                                </label>
+                            </div>
+                        </fieldset>
+                        <!-- /.form-program__box -->
+                    </div>
+                    <!-- /.form-program__wrap-flex -->
+
+                    <fieldset class="form-program__box">
                         <legend
-                            class="form-program__title form-program__title_top-indent"
+                            class="form-program__title form-program__title_right-line form-program__title_right-line-1"
                         >
-                            Контактные данные (владельца кота)
+                            Контактные&nbsp;данные (владельца&nbsp;кота)
                         </legend>
-                        <div class="form-program__bl">
-                            <label
-                                class="form-program__label form-program__label-text"
-                                for=""
+                        <div class="form-program__wrap-bl-flex">
+                            <div
+                                class="form-program__bl form-program__bl_width-desktop"
                             >
-                                e-mail:*
-                            </label>
-                            <input
-                                class="form-program__input-text"
-                                type="email"
-                                required
-                            />
-                        </div>
+                                <label
+                                    class="form-program__label form-program__label-text"
+                                    for=""
+                                >
+                                    e-mail:*
+                                </label>
+                                <input
+                                    class="form-program__input-text"
+                                    type="email"
+                                    required
+                                />
+                            </div>
 
-                        <div class="form-program__bl">
-                            <label
-                                class="form-program__label form-program__label-text"
-                                for=""
+                            <div
+                                class="form-program__bl form-program__bl_width-desktop"
                             >
-                                телефон:*
-                            </label>
-                            <input
-                                class="form-program__input-text"
-                                type="tel"
-                                required
-                            />
+                                <label
+                                    class="form-program__label form-program__label-text"
+                                    for=""
+                                >
+                                    телефон:*
+                                </label>
+                                <input
+                                    class="form-program__input-text"
+                                    type="tel"
+                                    required
+                                />
+                            </div>
                         </div>
+                        <!-- /.form-program__wrap-bl-flex -->
                     </fieldset>
                     <!-- /.form-program__box -->
 
-                    <fieldset
-                        class="form-program__box form-program__box_top-line"
-                    >
-                        <legend class="form-program__title">Комментарий</legend>
+                    <fieldset class="form-program__box">
+                        <legend
+                            class="form-program__title form-program__title_right-line form-program__title_right-line-2"
+                        >
+                            Комментарий
+                        </legend>
                         <textarea
                             class="form-program__textarea"
                             name=""
@@ -215,10 +227,10 @@
                     </fieldset>
                     <!-- /.form-program__box -->
 
-                    <fieldset
-                        class="form-program__box form-program__box_top-line"
-                    >
-                        <legend class="form-program__title">
+                    <fieldset class="form-program__box form-program__box_row">
+                        <legend
+                            class="form-program__title form-program__title_right-line form-program__title_right-line-3"
+                        >
                             Дополнительно
                         </legend>
                         <input
@@ -264,10 +276,15 @@
                         >
                     </fieldset>
                     <!-- /.form-program__box -->
-                    <button class="btn form-program__btn">
-                        Отправить заявку
-                    </button>
-                    <p class="form-program__note">*&#8212;Обязательные поля</p>
+
+                    <div class="form-program__wrap-flex">
+                        <button class="btn form-program__btn">
+                            Отправить заявку
+                        </button>
+                        <p class="form-program__note">
+                            *&#8212;Обязательные поля
+                        </p>
+                    </div>
                 </form>
                 <!-- /.program-selection__form -->
             </section>

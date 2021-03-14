@@ -17,3 +17,34 @@
         text-transform: uppercase;
     }
 }
+
+@media (min-width: $width-tablet) {
+    .program-selection {
+        &__title {
+            padding: 34px 30px 54px;
+            font-size: 60px;
+            line-height: 60px;
+            border-top: none;
+        }
+
+        &__subtitle {
+            width: 325px;
+            margin: 0 0 66px 70px;
+            padding: 0;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
+
+@media (min-width: $width-desktop) {
+    .program-selection {
+        &__title {
+            padding: 44px 110px 56px;
+        }
+
+        &__subtitle {
+            margin-left: 110px;
+        }
+    }
+}

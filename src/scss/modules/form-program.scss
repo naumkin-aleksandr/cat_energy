@@ -1,4 +1,6 @@
 .form-program {
+    overflow: hidden;
+
     &__box {
         padding: 0 20px 27px;
         display: flex;
@@ -8,17 +10,8 @@
             border-bottom: 1px solid #d9d9d9;
         }
 
-        &_top-line {
-            position: relative;
-            &::after {
-                content: "";
-                width: 100%;
-                height: 2px;
-                background: $success-color;
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
+        &_bottom-indent {
+            margin-bottom: 25px;
         }
     }
 
@@ -32,16 +25,47 @@
         }
     }
 
+    &__block-border {
+        display: flex;
+        flex-flow: column;
+    }
+
     &__title {
-        display: inline-block;
+        width: 100%;
         margin-bottom: 30px;
         font-family: "Oswald";
         font-weight: 400;
         font-size: 24px;
         line-height: 26px;
 
-        &_top-indent {
-            padding-top: 25px;
+        &_right-line {
+            position: relative;
+            &::after {
+                content: "";
+                width: 100%;
+                height: 2px;
+                background: $success-color;
+                position: absolute;
+                top: 15px;
+            }
+
+            &-1 {
+                &::after {
+                    left: 202px;
+                }
+            }
+
+            &-2 {
+                &::after {
+                    left: 136px;
+                }
+            }
+
+            &-3 {
+                &::after {
+                    left: 156px;
+                }
+            }
         }
     }
 
@@ -142,6 +166,7 @@
 
     &__input-text {
         flex: 1;
+        width: 100px;
         height: 45px;
         padding: 0 15px;
         font-family: "Oswald";
@@ -184,6 +209,18 @@
         font-size: 16px;
         line-height: 18px;
         border: 1px solid #e7e7e7;
+
+        &:not(.form-program__textarea:focus) {
+            transition: 0.2s;
+        }
+
+        &:hover {
+            border-color: #cdcdcd;
+        }
+
+        &:focus {
+            border: 2px solid $primary-color;
+        }
     }
 
     &__btn {
@@ -194,8 +231,211 @@
 
     &__note {
         margin-bottom: 30px;
-
         line-height: 16px;
         text-align: center;
+    }
+}
+
+@media (min-width: $width-tablet) {
+    .form-program {
+        &__box {
+            padding: 0 70px 65px;
+
+            // &:last-of-type {
+            //     padding-bottom: 24px;
+            // }
+
+            &_bottom-line {
+                border-bottom: none;
+            }
+
+            &_bottom-indent {
+                margin-bottom: 0;
+            }
+
+            &_row {
+                flex-flow: row wrap;
+                justify-content: space-between;
+            }
+        }
+
+        &__bl {
+            margin-bottom: 20px;
+        }
+
+        &__block-border {
+            padding: 25px 27px;
+            border: 1px solid #e7e7e7;
+        }
+
+        &__title {
+            margin-bottom: 70px;
+            font-size: 36px;
+            line-height: 36px;
+
+            &::before {
+                content: "";
+                width: 30px;
+                height: 2px;
+                background: $success-color;
+                position: absolute;
+                top: 20px;
+                left: -70px;
+            }
+
+            &_right-line {
+                &::after {
+                    top: 20px;
+                }
+
+                &-1 {
+                    &::after {
+                        left: 525px;
+                    }
+                }
+
+                &-2 {
+                    &::after {
+                        left: 222px;
+                    }
+                }
+
+                &-3 {
+                    &::after {
+                        left: 251px;
+                    }
+                }
+            }
+        }
+
+        &__label {
+            font-size: 20px;
+            line-height: 30px;
+
+            &-radio {
+                padding-left: 60px;
+                line-height: 40px;
+
+                &::before {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                &::after {
+                    width: 18px;
+                    height: 18px;
+                    top: 11px;
+                    left: 11px;
+                }
+            }
+
+            &-checbox {
+                width: 221px;
+                margin-bottom: 30px;
+                padding-left: 60px;
+                line-height: 40px;
+
+                &:last-of-type {
+                    margin-bottom: 30px;
+                }
+
+                &::before {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                &::after {
+                    top: 7px;
+                    left: 7px;
+                }
+            }
+        }
+
+        &__input-text {
+            height: 52px;
+            padding: 0 20px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        &__textarea {
+            height: 174px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        &__wrap-flex {
+            margin-bottom: 70px;
+            padding: 0 70px;
+            display: flex;
+            align-items: center;
+        }
+
+        &__btn {
+            margin: 0 60px 0 0;
+            font-size: 20px;
+            line-height: 52px;
+        }
+
+        &__note {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (min-width: $width-desktop) {
+    .form-program {
+        &__wrap-box-flex {
+            padding: 0 110px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__box {
+            padding: 0 110px 70px;
+
+            &:last-of-type {
+                padding-bottom: 30px;
+            }
+
+            &_width-desktop {
+                padding: 0 0 70px 0;
+                width: 568px;
+            }
+        }
+
+        &__wrap-bl-flex {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__bl {
+            margin-bottom: 30px;
+
+            &_width-desktop {
+                margin: 0;
+                width: 570px;
+            }
+        }
+
+        &__title {
+            &::before {
+                width: 70px;
+                left: -110px;
+            }
+        }
+
+        &__label {
+            &-radio {
+                &:first-of-type {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        &__btn {
+            width: 568px;
+            margin-right: 80px;
+        }
     }
 }
